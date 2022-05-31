@@ -1,0 +1,60 @@
+export enum Network {
+  TESTNET3 = "testnet3",
+  MAINNET = "mainnet",
+  LOCALHOST = "localhost",
+}
+
+export const NodeUrl = {
+  [Network.TESTNET3]: "https://cronos-testnet-3.crypto.org:8545/",
+  [Network.MAINNET]: "https://evm-cronos.crypto.org",
+  [Network.LOCALHOST]: "http://localhost:8545",
+};
+
+// -------------- Testnet3 ------------------
+
+export const CronosTestnet3Erc20SmartContractAddress = {
+  WCRO: "0x6a3173618859C7cd40fAF6921b5E9eB6A76f1fD4",
+};
+
+export const CronosTestnet3VVSPairSmartContractAddress = {
+};
+
+export const CronosTestnet3SmartContract = {
+};
+
+// -------------- Mainnet ------------------
+
+export const CronosMainnetErc20SmartContractAddress = {
+  WCRO: "0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23",
+  WETH: "0xe44Fd7fCb2b1581822D0c862B68222998a0c299a",
+  WBTC: "0x062E66477Faf219F25D27dCED647BF57C3107d52",
+  USDC: "0xc21223249CA28397B4B6541dfFaEcC539BfF0c59",
+  USDT: "0x66e428c3f67a68878562e79A0234c1F83c208770",
+  DAI: "0xF2001B145b43032AAF5Ee2884e456CCd805F677D",
+  SHIB: "0xbED48612BC69fA1CaB67052b42a95FB30C1bcFee",
+  DOGE: "0x1a8E39ae59e5556B56b76fCBA98d22c9ae557396",
+  VVS: "0x2D03bECE6747ADC00E1a131BBA1469C15fD11e03",
+  BENCH: "0x6a2d178585806De5A2e5E7F9acFCE44680637284", // Workbench
+  BIFI: "0xe6801928061CDbE32AC5AD0634427E140EFd05F9",
+};
+
+export const CronosMainnetVVSPairSmartContractAddress = {
+  "CRO-USDC": "0xe61Db569E231B3f5530168Aa2C9D50246525b6d6",
+  "CRO-WETH": "0xA111C17f8B8303280d3EB01BBcd61000AA7F39F9",
+  "CRO-VVS": "0xbf62c67eA509E86F07c8c69d0286C0636C50270b",
+  "CRO-WBTC": "0x8F09fFf247B8fDB80461E5Cf5E82dD1aE2EBd6d7",
+  "ETH-USDC": "0xfd0Cd0C651569D1e2e3c768AC0FFDAB3C8F4844f",
+  "VVS-USDC": "0x814920d1b8007207db6cb5a2dd92bf0b082bdba1",
+  "USDC-USDT": "0x39cC0E14795A8e6e9D02A21091b81FE0d61D82f9",
+  "VVS-USDT": "0x280aCAD550B2d3Ba63C8cbff51b503Ea41a1c61B",
+};
+
+export const CronosMainnetSmartContract = {
+  VVSFactory: "0x3B44B2a187a7b3824131F8db5a74194D0a42Fc15",
+  VVSRouter: "0x145863Eb42Cf62847A6Ca784e6416C1682b1b2Ae",
+  Workbench: "0x6a2d178585806De5A2e5E7F9acFCE44680637284",
+  VVSVault: "0xA6fF77fC8E839679D4F7408E8988B564dE1A2dcD",
+  SmartCraftFactory: "0xdC2d9eD0efA656Fc70c41987f0cc11Ba0C8B6276",
+  VVSZap: "0x8D13982c702FE7c6537529986dF67daBeAFc4C19",
+  VVSBar: "0x7fE4DB9063b7Dd7ba55313B9c258070bEd2C143A",
+};
