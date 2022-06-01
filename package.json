@@ -11,16 +11,7 @@
     "eslint:fix": "yarn eslint:check --fix",
     "format:check": "yarn prettier:check && yarn eslint:check",
     "format": "yarn prettier:fix && yarn eslint:fix",
-    "script": "node -r ts-node/register --require ./configs.ts scripts/main.ts",
-    "playground": "yarn script",
-    "script:avgNumberOfBlock": "yarn script",
-    "covert-time-to-blocknumber": "yarn script",
-    "script:queryBalance": "yarn script",
-    "query-historical-balance": "yarn script",
-    "query-block": "yarn script",
-    "query-transaction": "yarn script",
-    "decode-cronos-transaction": "yarn script",
-    "query-network-config": "yarn scripts"
+    "script": "node -r ts-node/register --require ./configs.ts scripts/main.ts"
   },
   "author": "Eve",
   "license": "ISC",
