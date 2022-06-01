@@ -12,6 +12,7 @@ INPUTS=<param1>,<param2>,...<paramN> FUNCTION=<functionName> yarn script <blockc
 - queryBalance
 - convertTimeToBlockNumber
 - historicalBalance
+- historicalBalanceERC20
 - queryByBlockNumber
 - queryByTransactionHash
 - queryNetworkStatus
@@ -22,22 +23,32 @@ INPUTS=<param1>,<param2>,...<paramN> FUNCTION=<functionName> yarn script <blockc
 FUNCTION=averageBlockTimeInSec yarn script <blockchainName> <blockchainNetwork>
 FUNCTION=averageBlockTimeInSec yarn script cronos mainnet
 ```
+
 ```
 INPUTS=<address> FUNCTION=queryBalance yarn script <blockchainName> <blockchainNetwork>
 ```
+
 ```
 INPUTS=<address> FUNCTION=historicalBalance yarn script <blockchainName> <blockchainNetwork>
 ```
+
 ```
 INPUTS=<address>,<fromBlock>,<interval>,<toBlock> FUNCTION=historicalBalance yarn script <blockchainName> <blockchainNetwork>
 ```
+
+```
+  INPUTS=<erc20-address>,<address>,<fromBlock(optional)>,<interval(optional)>,<toBlock(optional)>  FUNCTION=historicalBalanceERC20 yarn script cronos testnet3
+```
+
 ```
 INPUTS=<blockNumber> FUNCTION=queryByBlockNumber yarn script <blockchainName> <blockchainNetwork>
 ```
+
 ```
 INPUTS=<transactionHash> FUNCTION=queryByTransactionHash yarn script <blockchainName> <blockchainNetwork>
 INPUTS=0xd9869b6313aef555a7169cd80f57403a5c60a9edf25155acb6391b863b2f88f8 FUNCTION=queryByTransactionHash yarn script cronos mainnet
 ```
+
 ```
 FUNCTION=queryNetworkStatus yarn script <blockchainName> <blockchainNetwork>
 FUNCTION=queryNetworkStatus yarn script cronos mainnet
